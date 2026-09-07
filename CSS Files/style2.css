@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Project-30/backgroundimages/romantic-love-3840x2160-24698.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+}
+
+
+.container {
+    width: auto;
+    height: auto;
+    margin: 10rem;
+    max-width: 1000px;
+    padding: 40px;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    text-align: center;
+    align-items: center;
+    animation: fade 3s;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(7, 1, 2);
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-shadow: 0px 0px 5px rgb(19, 1, 1);
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #f8eec3;
+    font-family: monospace;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #fffefe;
+    color: rgb(254, 253, 253);
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 20px;
+    transition: .4s;
+    cursor: pointer;
+    border: 2px solid rgb(7, 245, 237);
+    font-weight: bold;
+}
+.btn {
+    border: none;
+    margin: 10px;
+    padding: 2.7vh 2.1vw;
+    border: 2px solid rgb(254, 254, 254);
+    border-radius: 8vh;
+    background-color: transparent;
+    color: rgb(253, 252, 252);
+    cursor: pointer;
+    font-size: 2.5vh;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s, border-color 0.4s;
+    z-index: 1;
+}
+
+
+.btn:hover {
+    color: rgb(22, 22, 22);
+    border-color: transparent;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 0px 10px skyblue;
+}
+
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    bottom: -160%;
+    left: 0;
+    background:  linear-gradient(135deg, skyblue, #0742af, #e1fbf9);
+    transition: bottom 1s;
+    z-index: -1;
+    border-radius: 40%;
+    box-shadow: 0px 0px 5px skyblue;
+}
+
+
+.btn:hover::before {
+    bottom: -30%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
